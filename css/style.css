@@ -1,52 +1,89 @@
 body {
-	background-image: url("assets/images/seigaiha.png");
-	background-repeat: no-repeat;
+	background-image: url("../assets/images/seigaiha.png");
 	background-attachment: fixed;
-	background-position: center top;
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Georgia', Times, serif;
-	color: #4aaaa5;
+	color: #7286c7;
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times serif;
+	font-size: 15px;
+	text-align: center;
+	border-bottom: #dddddd;
 }
 
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 10px;
+	font-size: 20px;
+}
+
+.nav-bar {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	border-bottom: #dddddd;
+	overflow: auto;
 }
 
 #header {
-	display: inline;
+	display: block;
 	float: left;
 	font-size: 20px;
 	font-family: 'Georgia', Times, Times serif;
 	color: white;
+	background-color: #7286c7;
 	padding: 10px;
-	width: 20px;
-	background-color: #4aaaa5;
+	width: 140px;
 }
 
-.con-head{
-	font-family: 'Georgia', Times, Times serif;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+	color: #7286c7;    
+	text-align: center;
 	font-size: 15px;
-	border-bottom: #dddddd;
-}
-
-.nav-bar {
-	display: inline;
-	background-color: #ffffff;
-	float: left;
-	font-size: 10px;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	border-bottom: #dddddd;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+
+li a:visited { 
+	color: #615c5c; 
 }
 
-.about-me {
+li a:hover { 
+	color: yellow; 
+}
+
+.main-content {
+	display: block;
 	float: left;
 	width: 650px;
 	background: #ffffff;
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#bio-image{
+	float: left;
+	max-width: 100px;
+	margin: 5px 5px;
 }
 
 .connect {
@@ -54,26 +91,6 @@ p {
 	background: #ffffff
 	width: 75px;
 	height: 50px;
-
-}
-
-.contact {
-	float: left;
-	width: 650px;
-	background: #ffffff
-	'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-#bio-image{
-	float: left;
-	max-width: 50px;
-	margin: 5px 5px;
-}
-
-.portfolio {
-	float: left;
-	width: 400px;
-
 }
 
 #photo1 {
@@ -89,8 +106,7 @@ p {
 
 #photo3 {
 	float: left;
-	width: 25%;
-	
+	width: 25%;	
 }
 
 #photo4 {
@@ -101,4 +117,13 @@ p {
 #photo5 {
 	float: left;
 	width: 25%;
+}
+
+footer {
+	background: #615c5c;
+	height: 100px;
+	width: 100%;
+	padding: 20px;	
+	position: fixed;
+	bottom: 0;
 }
