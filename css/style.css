@@ -1,34 +1,43 @@
+* {
+	margin: 0;
+}
+
 body {
 	background-image: url("../assets/images/seigaiha.png");
 	background-attachment: fixed;
+	height: 100%;
 }
 
 h1 {
 	font-size: 30px;
 	font-family: 'Georgia', Times, serif;
 	color: #7286c7;
+	padding-bottom: 5px;
+	border-bottom: solid 3px #dddddd;
 }
 
 h2 {
 	font-family: 'Georgia', Times, Times serif;
-	font-size: 15px;
+	font-size: 20px;
+	color: #7286c7;
 	text-align: center;
-	border-bottom: #dddddd;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #dddddd;
 }
 
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 .nav-bar {
 	display: block;
-	position: fixed;
+	margin-bottom: 20px;
 	top: 0;
 	width: 100%;
-	height: auto;
 	background-color: #ffffff;
-	border-bottom: #dddddd;
+	border-bottom: solid 2px #dddddd;
 	overflow: auto;
 }
 
@@ -41,12 +50,13 @@ p {
 	background-color: #7286c7;
 	padding: 10px;
 	width: 140px;
+	margin-left: 75px;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 14px;
     overflow: hidden;
 }
 
@@ -61,7 +71,7 @@ li a {
 	font-size: 15px;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; 
  }
 
 li a:visited { 
@@ -76,21 +86,66 @@ li a:hover {
 	display: block;
 	float: left;
 	width: 650px;
+	margin left: 75px; 
 	background: #ffffff;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-family:'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #bio-image{
 	float: left;
-	max-width: 100px;
+	max-width: 250px;
 	margin: 5px 5px;
 }
 
 .connect {
+	display: block;
 	float: right;
-	background: #ffffff
-	width: 75px;
-	height: 50px;
+	background: #ffffff;
+	width: 260px;
+	height: 130px;
+}
+
+.link-set {
+	display: block;
+	background: #ffffff;
+	width: 260px;
+	padding: 8px 20px;
+	overflow: hidden;
+}
+
+.link {
+	width: 50px;
+	margin: 5px;
+	float: left;
+	padding: 5px;
+	overflow: hidden;
+}
+
+form {
+	line-height: 30px;
+	color: #615c5c;
+	font-family:'Helvetica Neue', Helvetica, sans-serif;
+    border: 0px solid;
+    color: #CCC;
+    height: auto;
+}
+
+#name {
+	height: 30px;
+	width: 600px;
+	font-size: 16px;
+}
+
+#email {
+	height: 30px;
+	width: 600px;
+	font-size: 16px;
+}
+
+#message {
+	height: 200px;
+	width: 600px;
+	font-size: 16px;
 }
 
 #photo1 {
@@ -102,28 +157,53 @@ li a:hover {
 #photo2 {
 	float: left;
 	width: 25%;
+	padding: 5px;
+
 }
 
 #photo3 {
 	float: left;
-	width: 25%;	
+	width: 25%;
+	padding: 5px;
+
 }
 
 #photo4 {
 	float: left;
+	padding: 10px;
 	width: 25%;
 }
 
 #photo5 {
 	float: left;
 	width: 25%;
+	padding: 5px;
+}
+
+.wrap {
+	min-height: 100%;
+  	margin-bottom: -42px; 
+}
+
+.wrap:after {
+  	display: block;
+}
+
+footer, .wrap:after {
+	height: 42px;
+	border-top: solid 5px #7286c7;
 }
 
 footer {
 	background: #615c5c;
-	height: 100px;
 	width: 100%;
-	padding: 20px;	
+	padding: 14px;
+	margin: 0;	
 	position: fixed;
 	bottom: 0;
+	border-top-color: #7286c7; 
+}
+
+.footer-text {
+	text-align: center;
 }

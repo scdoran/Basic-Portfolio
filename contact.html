@@ -8,37 +8,44 @@
 		<body>
 			<header class="nav-bar">
 			<nav>
-				<h1 class="header">Sarah Doran</h1>
-				<a href="/index.html">About</a>
-				<a href="/portfolio.html">Portfolio</a>
-				<a href="/contact.html">Contact</a>
+				<h1 id="header">Sarah Doran</h1>
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
 			</nav>
 			</header>
 			
-			<section class="main-content">
+			<div class="main-content">
 					<h1>Contact</h1>
-					<form class="form">
+					<form>
 						<fieldset>
 							Name<br>
-							<input type="text" name="name" value="John Smith"><br>
+							<input id="name" type="text" name="name" value="John Smith"><br>
 							Email<br>
-							<input type="text" name="email" value="example@gmail.com"><br>
+							<input id="email" type="text" name="email" value="example@gmail.com"><br>
 							Message
-							<input type="text" name="message" value="Type Your Message Here"><br>
+							<input id="message" type="text" name="message" value="Type Your Message Here"><br>
 							<input type="submit" value="Submit">
 						</fieldset>
 					</form>
-			</section>
-			<section class="connect">
+			</div>
+				
+			<div class="connect">
 					<h2>Connect With Me</h2>
-					<a href="https://www.linkedin.com/in/scdoran" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin Link"></a>
-					<a href="https://github.com/scdoran" target="_blank"><img src="assets/images/github.png" alt="Github Link"></a>
-					<a href="http://stackoverflow.com/users/6833063/sarah-doran" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow Link"></a>
-			</section>
+				<section class="link-set">
+					<a href="https://www.linkedin.com/in/scdoran" target="_blank"><img class="link" src="assets/images/linkedin.png" alt="Linkedin Link"></a>
+					<a href="https://github.com/scdoran" target="_blank"><img class="link" src="assets/images/github.png" alt="Github Link"></a>
+					<a href="http://stackoverflow.com/users/6833063/sarah-doran" target="_blank"><img class="link" src="assets/images/stackoverflow.png" alt="Stack Overflow Link"></a>
+				</section>
+			</div>
 			
-			<footer class="footer">
+			<div class="wrap">
+				<footer class="footer">
 				<p>&copy;Copyright 2016 Sarah Doran</p>
-			</footer>
+				</footer>
+			</div>
 
 		</body>
 	</html>
