@@ -27,7 +27,7 @@ h2 {
 
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	line-height: 22px;
 }
 
@@ -56,6 +56,7 @@ p {
 ul {
     list-style-type: none;
     margin: 0;
+    margin-right: 75px;
     padding: 14px;
     overflow: hidden;
 }
@@ -86,8 +87,10 @@ li a:hover {
 	display: block;
 	float: left;
 	width: 650px;
-	margin left: 75px; 
+	margin-left: 75px;
+	padding: 10px 5px; 
 	background: #ffffff;
+	border: 2px solid #dddddd;
 	font-family:'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -101,8 +104,11 @@ li a:hover {
 	display: block;
 	float: right;
 	background: #ffffff;
+	border: 2px solid #dddddd;
 	width: 260px;
 	height: 130px;
+	margin-right: 100px;
+	overflow: hidden;
 }
 
 .link-set {
@@ -121,13 +127,23 @@ li a:hover {
 	overflow: hidden;
 }
 
-form {
-	line-height: 30px;
+input [type:text] {
+	font-size: 16px;
 	color: #615c5c;
+	padding: 5px;
 	font-family:'Helvetica Neue', Helvetica, sans-serif;
-    border: 0px solid;
-    color: #CCC;
-    height: auto;
+	line-height: 30px;
+}
+
+input[type=submit] {
+	margin-top: 5px;
+    padding: 10px 15px; 
+    background: #ccc; 
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px; 
+    font-size: 15px;
+    color: white;
 }
 
 #name {
@@ -197,13 +213,12 @@ footer, .wrap:after {
 footer {
 	background: #615c5c;
 	width: 100%;
-	padding: 14px;
+	padding-top: 25px;
 	margin: 0;	
 	position: fixed;
 	bottom: 0;
 	border-top-color: #7286c7; 
-}
-
-.footer-text {
 	text-align: center;
+	font-size: 10px;
+	color: #dddddd;
 }
