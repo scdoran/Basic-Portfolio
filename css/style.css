@@ -12,9 +12,9 @@ body {
 h1 {
 	font-size: 30px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	color: #7286c7;
-	padding-bottom: 5px;
-	border-bottom: solid 3px #dddddd;
+	color: #4aaaa5;
+	margin-left: 18px; 
+	padding: 10px 0px;
 	max-width: 650px;
 	background: #ffffff;
 	height: 50px;
@@ -23,25 +23,30 @@ h1 {
 h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 20px;
-	color: #7286c7;
+	color: #4aaaa5;
 	text-align: center;
 	padding: 10px 0;
-	border-bottom: 3px solid #dddddd;
 }
 
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
-	color: #615c5c;
+	color: #777777;
 	line-height: 25px;
 	padding-top: 5px;
 }
 
 hr {
-	align: center;
-	color: #dddddd;
-	size: 2px;
-	width: 200px;
+	border-top: 3px solid #dddddd;
+	width: 226px;
+	margin-left: 18px;
+}
+
+#hr-main {
+	border-top: 3px solid #dddddd;
+	width: 594px;
+	margin-left: 18px;
+	overflow: auto;
 }
 
 .nav-bar {
@@ -50,7 +55,7 @@ hr {
 	top: 0;
 	width: 100%;
 	background-color: #ffffff;
-	border-bottom: solid 2px #dddddd;
+	border-bottom: solid 2px #cccccc;
 	overflow: auto;
 }
 
@@ -68,7 +73,7 @@ hr {
 	font-size: 25px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: white;
-	background-color: #7286c7;
+	background-color: #4aaaa5;
 	padding: 20px 35px;
 	width: 235px;
 	height: 73px;
@@ -89,7 +94,7 @@ li {
 
 li a {
     display: block;
-	color: #7286c7;    
+	color: #4aaaa5;    
 	text-align: center;
 	font-size: 15px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -108,7 +113,7 @@ li a:hover {
 .main-content {
 	display: block;
 	float: left;
-	width: 650px;
+	max-width: 650px;
 	margin-left: 75px;
 	padding: 10px 5px; 
 	background: #ffffff;
@@ -125,12 +130,12 @@ li a:hover {
 
 .connect {
 	display: block;
-	float: right;
+	float: left;
 	background: #ffffff;
 	border: 2px solid #dddddd;
 	width: 270px;
 	height: 130px;
-	margin-right: 225px;
+	margin-left: 40px;
 	overflow: hidden;
 }
 
@@ -195,30 +200,21 @@ input[type=submit] {
 
 #gallery {
 	padding: 10px;
-	list-style: none;
 	max-width: 650px;
-	height: auto;
 	background: #ffffff;
 	box-sizing: border-box;
-
-}
-
-#gallery {
-	box-sizing: border-box;	
 }
 
 .box {
 	float: left;
 	display: inline-block;
 	width: 250px;
-	margin: 5px;
+	height: 250px;
+	margin: 5px 35px 20px 22px;
 	position: relative;
-	overflow: auto;
-	box-sizing: border-box;
 }
 
 .photo {
-	width: 250px;
 	z-index: 0;
 	position: relative;
 }
@@ -228,18 +224,18 @@ input[type=submit] {
 	z-index: 1;
 	color: white;
 	font-size: 18px;
-	font-weight: bold;
-	right: 0px;
-	bottom: 35px;
-	background: #615c5c;
+	text-align: center;
+	bottom: 60px;
+	background: #4aaaa5;
 	width: 250px;
 	height: 50px;
-	padding: 5px;
+	padding-top: 15px;
 }
 
 .wrap {
 	min-height: 100%;
-  	margin-bottom: 1400px; 
+  	margin-bottom: 1200px;
+  	max-width: 960px; 
 }
 
 .wrap:after {
@@ -248,16 +244,16 @@ input[type=submit] {
 
 footer, .wrap:after {
 	height: 50px;
-	border-top: solid 5px #7286c7;
+	border-top: solid 5px #4aaaa5;
 }
 
 footer {
-	background: #615c5c;
+	background: #666666;
 	width: 100%;
 	margin: 0;	
 	position: fixed;
 	bottom: 0;
-	border-top-color: #7286c7; 
+	border-top-color: #4aaaa5; 
 	text-align: center;
 	font-size: 10px;
 	color: #dddddd;
@@ -266,7 +262,7 @@ footer {
 
 #footer-text {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	color: #ccc;
 	line-height: 25px;
 	padding-top: 10px;
